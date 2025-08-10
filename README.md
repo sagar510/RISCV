@@ -39,7 +39,14 @@ pip install pyyaml
 
 ## 🚀 Usage
 
-### 1. Generate C Header from YAML
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sagar510/RISCV.git
+cd RISCV
+```
+
+### 2. Generate C Header from YAML
 
 ```bash
 python3 gen_c_header.py ./input_yamls/dpc.yaml
@@ -53,7 +60,7 @@ python3 gen_c_header.py ./input_yamls/dpc.yaml
 
 ---
 
-### 2. Compile C Program for Reverse Conversion
+### 3. Compile C Program for Reverse Conversion
 
 ```bash
 gcc gen_yaml.c -o gen_yaml
@@ -61,7 +68,7 @@ gcc gen_yaml.c -o gen_yaml
 
 ---
 
-### 3. Generate YAML from C Header
+### 4. Generate YAML from C Header
 
 ```bash
 ./gen_yaml > ./output_yamls/result.yaml
